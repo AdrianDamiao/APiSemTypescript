@@ -1,3 +1,5 @@
+const { response } = require("../../../app");
+
 class MainController{
 
     main(req, res){
@@ -12,6 +14,14 @@ class MainController{
             status: 'ok',
             message: 'Test'
         })
+    }
+
+    testId(req, res){
+        let params = req.params
+        
+        res.json({
+            id: parseInt(params.id)
+        });
     }
 }
 
