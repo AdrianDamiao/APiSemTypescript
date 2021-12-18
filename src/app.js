@@ -19,7 +19,7 @@ class App{
     }
 
     routes(){
-
+        require('./app/routes/index')(this.express);
     }
 }
 
