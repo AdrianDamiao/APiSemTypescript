@@ -1,10 +1,7 @@
+const UsersController = require('./controllers/UsersController');
+
 const UserRoutes = require('express').Router();
 
-UserRoutes.get('/user', (req, res) => {
-    return res.status(200).json({
-        status: 'ok',
-        message: 'UserRoutes'
-    })
-});
+UserRoutes.get('/user', UsersController.main);
 
 module.exports = UserRoutes;

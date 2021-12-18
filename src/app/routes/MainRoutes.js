@@ -1,10 +1,7 @@
+const MainController = require('./controllers/MainController');
+
 const MainRoutes = require('express').Router();
 
-MainRoutes.get('/', (req, res) => {
-    return res.status(200).json({
-        status: 'ok',
-        message: 'MainRoutes'
-    })
-});
+MainRoutes.get('/', MainController.main);
 
 module.exports = MainRoutes;
