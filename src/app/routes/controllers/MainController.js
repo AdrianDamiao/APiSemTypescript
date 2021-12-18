@@ -3,8 +3,15 @@ class MainController{
     main(req, res){
         return res.status(200).json({
             status: 'ok',
-            message:'Index de Main'
+            message:'Work In Progress'
         });
+    }
+
+    test(req, res){
+        return res.status(200).json({
+            status: 'ok',
+            message: 'Test'
+        })
     }
 }
 
